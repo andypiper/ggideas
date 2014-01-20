@@ -1,3 +1,3 @@
 require './gg_ideas'
 
-run MyApp.new
+run GiffGaffIdeas.new

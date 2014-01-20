@@ -1,4 +1,10 @@
-<h3>IDEA <%= @myidea %></h3>
+<html>
+<head><title>the giffgaff ideaseriser!</title></head>
+<body>
+  <h3><a href='<%= @ideaurl %>'> Community idea <%= @myidea %></a> was kudos'ed by <%= @kudosnumber %> users</h3>
+<div>Well, according to the Lithium API anyway, if the number isn't what you expected, maybe some users kudos'ed more than once? oh... and here is a list of (up to the first 100 of) those lovely people!</div>
+<div><br/></div>
+<div>
 <table>
 <% @userlist.each do |elem| %>
   <tr>
@@ -8,4 +14,7 @@
   </tr>
 <% end %>
 </table>
-
+</div>
+<div><br/></div>
+<div>go to the <a href='http://community.giffgaff.com/t5/Submit-Great-giffgaff-Ideas/idb-p/ideas_01'>giffgaff Ideas Forum</a></div>
+</body>
