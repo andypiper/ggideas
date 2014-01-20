@@ -15,7 +15,7 @@ class MyApp < Sinatra::Base
 
     @myidea = "#{params[:argument]}"
     @userlist = Array.new
-    idea = "http://community.giffgaff.com/restapi/vc/messages/id/#{params[:argument]}/kudos/givers"
+    idea = "http://community.giffgaff.com/restapi/vc/messages/id/#{params[:argument]}/kudos/givers?page_size=100"
     doc = Nokogiri::XML(open(idea))
     response = doc.css("response")
     response.css("users").children.each do |user|
