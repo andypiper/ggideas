@@ -4,8 +4,12 @@ require 'nokogiri'
 require 'open-uri'
 
 class GiffGaffIdeas < Sinatra::Base
+
+configure do
   set :static, true
   set :public_folder, File.dirname(__FILE__) + '/public'
+  set :server, 'thin'
+end
 
   get '/' do
     # currently we don't do anything if you don't provide an argument
@@ -48,6 +52,3 @@ class GiffGaffIdeas < Sinatra::Base
   end
 
 end
-
-
-

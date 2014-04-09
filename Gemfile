@@ -1,4 +1,5 @@
-ruby '1.9.3'
+ruby '2.0.0'
 source 'https://rubygems.org'
-gem "nokogiri"
-gem "sinatra"
+gem 'sinatra'
+gem 'thin'
+gem 'nokogiri'
