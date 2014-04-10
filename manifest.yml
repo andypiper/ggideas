@@ -1,7 +1,7 @@
 ---
 applications:
 - name: ggideas
-  memory: 128M
+  memory: 160M
   instances: 1
   host: ggideas
   domain: cfapps.io
