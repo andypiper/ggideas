@@ -39,7 +39,7 @@ end
     # call the API and read the usernames into the list
     # future: if more than 100 number_of_kudos, get each page and merge into one list
     # eg http://community.giffgaff.com/restapi/vc/messages/id/[idea]/kudos/givers?page_size=100&page=1/2/3 etc
-    idea = "http://community.giffgaff.com/restapi/vc/messages/id/#{params[:argument]}/kudos/givers?page_size=100"
+    idea = "http://community.giffgaff.com/restapi/vc/messages/id/#{params[:argument]}/kudos/givers?page_size=999"
     doc = Nokogiri::XML(open(idea))
     response = doc.css("response")
     response.css("users").children.each do |user|
