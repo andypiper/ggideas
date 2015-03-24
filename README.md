@@ -4,13 +4,13 @@ A simple Ruby / Sinatra app using the [Lithium API](https://lithosphere.lithium.
 Based on an idea from "wonderwoman" hazel
 
 ### Installation
-To run it locally, simply use rackup. 
+To run it locally, simply use rackup.
 
 ### Usage
 Add the idea number after the url i.e. ``http://<yourdomain.com>/idea/<idea number>`` - a form or something nicer will come later, this is barebones for now.
 
 ### To do
-branding, form for submitting numbers, search for ideas, link to user profiles, ranking of ideas by kudos, wow this could get all kinds of complicated...
+download results as CSV, branding, form for submitting numbers, search for ideas, link to user profiles, ranking of ideas by kudos, wow this could get all kinds of complicated...
 
 ### License
 The MIT License (MIT) - see LICENSE.md
